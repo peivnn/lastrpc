@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("lastrpc", "for lastrpc support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("lastrpc", "enable lastrpc support", "no");
+
+if (PHP_LASTRPC != "no") {
+	EXTENSION("lastrpc", "lastrpc.c");
+}
+
